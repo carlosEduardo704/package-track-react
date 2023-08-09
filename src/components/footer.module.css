@@ -1,0 +1,13 @@
+footer{
+  display: block;
+}
+
+footer img{
+  width: 30px;
+  padding-right: 10px;
+}
+
+.divFooter {
+  padding: 10px;
+  display: block;
+}
