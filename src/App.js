@@ -9,7 +9,6 @@ import Track from './pages/Track';
 import SearchCep from './pages/SearchCep';
 import About from './pages/About';
 
-// components
 
 const App = () => {
   return (
