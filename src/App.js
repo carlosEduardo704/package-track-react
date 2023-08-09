@@ -10,18 +10,17 @@ import SearchCep from './pages/SearchCep';
 import About from './pages/About';
 
 // components
-import NavBar from './components/NavBar';
+
 const App = () => {
   return (
     <Router>
-      <NavBar/>
       <Routes>
-        <Route exact path='/' component={Home}/>
-        <Route path='/login' component={Login}/>
-        <Route path='/register' component={Register}/>
-        <Route path='/track' component={Track}/>
-        <Route path='cepSearch' component={SearchCep}/>
-        <Route path='about' component={About}/>
+        <Route exact path='/' element={<Home/>}/>
+        <Route path='login' element={<Login/>}/>
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/track' element={<Track/>}/>
+        <Route path='cepSearch' element={<SearchCep/>}/>
+        <Route path='about' element={<About/>}/>
       </Routes>
     </Router>
   )
