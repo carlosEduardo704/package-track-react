@@ -1,10 +1,12 @@
 import React from 'react'
+import './LoginStyle.css'
+import Footer from '../components/Footer'
 
 const Login = () => {
   return(
-    <div>
-      <h1>Page login</h1>
-    </div>
+    <>
+    <Footer/>
+    </>
   )
 }
 
