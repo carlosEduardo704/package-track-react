@@ -6,7 +6,7 @@ const Footer = ()=> {
   return(
     <div className={styles.divFooter}>
       <footer>
-        <h4 class="copyright">Criado por: Carlos Eduardo</h4>
+        <h4>Criado por: Carlos Eduardo</h4>
         <Link to="https://facebook.com/cadunokia" target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="facebook icon"/></Link>
         <Link to="https://linkedin.com/in/carlos-eduardo-704" target="_blank">
