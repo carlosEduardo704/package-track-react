@@ -4,8 +4,8 @@ import './HomeStyle.css'
 // Components
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
-import CentralElements from '../components/CentralElements'
-import Section from '../components/Section'
+import CentralElements from '../components/HomePage/CentralElements'
+import Section from '../components/HomePage/Section'
 
 const Home = () => {
   return(
