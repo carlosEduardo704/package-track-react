@@ -1,10 +1,15 @@
 import React from 'react'
+import NavBar from '../components/NavBar'
+import RegisterPage from '../components/RegisterPage/RegisterPage'
+import Footer from '../components/Footer'
 
 const Register = () => {
   return(
-    <div>
-      <h1>Register Page</h1>
-    </div>
+    <>
+    <NavBar/>
+    <RegisterPage/>
+    <Footer/>
+    </>
   )
 }
 
