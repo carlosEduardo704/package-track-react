@@ -4,11 +4,11 @@ import styles from './section.module.css'
 const Section = ()=> {
   return (
     <>
-      <section>
-        <p className={styles.firstP}>Como rastrear objetos, encomendas ou pacotes com o Packagetrack?</p>
+      <section className={styles.section}>
+        <p className={styles.firstP}>Como rastrear objetos, encomendas ou pacotes com o PackageTrack?</p>
         <div className={styles.externalDivTrackTeach}>
           <div className={styles.internalDivTrackTeach}>
-            <h3>
+            <h3 className={styles.h3}>
               Cadastre os códigos
               <br />
               dos objetos

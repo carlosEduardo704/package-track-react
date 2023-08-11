@@ -1,8 +1,13 @@
-footer{
+.divFooter h4{
+  color: #FFFAFA;
+  font-family: Dyuthi;
+}
+
+.divFooter footer{
   bottom: 0;
 }
 
-footer img{
+.divFooter img{
   width: 30px;
   padding-right: 10px;
 }

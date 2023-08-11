@@ -10,7 +10,7 @@
   border: solid 1px black;
 }
 
-h2{
+.divRegisterPage h2{
   text-align: center;
 }
 
@@ -19,13 +19,13 @@ h2{
   justify-content: right;
 }
 
-label{
+.divRegisterPage label{
   margin: 20px;
   margin-bottom: 0;
   margin-top: 0;
 }
 
-input{
+.divRegisterPage input{
   margin: 20px;
   margin-bottom: 10px;
   margin-top: 0;
@@ -33,7 +33,7 @@ input{
   font-size: 20px;
 }
 
-a{
+.divRegisterPage a{
   color: #6EAF2C;
 }
 

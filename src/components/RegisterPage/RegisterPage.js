@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const RegisterPage = ()=> {
   return (
-    <>
+    <div className={styles.divRegisterPage}>
       <div className={styles.externalDiv}>
         <div className={styles.internalDiv}>
           <h2>Criar Conta</h2>
@@ -14,9 +14,9 @@ const RegisterPage = ()=> {
             <input type="text" id="nome" />
             <label htmlFor="sobreNome">Sobrenome</label>
             <input type="text" id="sobreNome" />
-            <label htmlfor="email">E-mail</label>
+            <label htmlFor="email">E-mail</label>
             <input type="email"id="email"/>
-            <label htmlfor="confirmarEmail">Confirmar E-mail</label>
+            <label htmlFor="confirmarEmail">Confirmar E-mail</label>
             <input type="email"id="confirmarEmail"/>
             <label for="senha">Senha</label>
             <input type="password" id="senha"/>
@@ -29,7 +29,7 @@ const RegisterPage = ()=> {
         </div>
       </div>
       <div className={styles.spaceFooter}></div>
-    </>
+    </div>
   )
 }
 

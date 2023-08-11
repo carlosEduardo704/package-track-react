@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const LoginPage = ()=> {
   return (
-    <>
+    <div className={styles.divLoginPage}>
       <div className={styles.externalDiv}>
         <div className={styles.internalDiv}>
           <h2>Fazer Login</h2>
@@ -25,7 +25,7 @@ const LoginPage = ()=> {
         </div>
       </div>
       <div className={styles.spaceFooter}></div>
-    </>
+    </div>
   )
 }
 
