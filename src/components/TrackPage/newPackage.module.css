@@ -1,0 +1,17 @@
+.divNewPackage{
+  display: flex;
+  padding-top: 0;
+  margin-top: -10px;
+}
+.divNewPackage input{
+  font-size: 20px;
+}
+
+.divNewPackage button{
+  font-size: 15px;
+  background-color: #6EAF2C;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+

@@ -1,10 +1,13 @@
 import React from "react";
-
+import styles from './newPackage.module.css'
 const NewPackage = ()=> {
   return (
     <div>
-      <input type="text" placeholder="Novo Pacote"/>
+      <h1>Novo Pacote</h1>
+      <div className={styles.divNewPackage}>
+      <input type="text" placeholder="AB123456789BR"/>
       <button>Pesquisar</button>
+      </div>
     </div>
     
   )
