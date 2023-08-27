@@ -17,6 +17,7 @@ const Track = () => {
         <NewPackage/>
         <PackageCode/>
         <HistoryPackage/>
+        <TrakingInformation/>
       </div>
       <div className="trackExternalDivFooter">
         <Footer/>
