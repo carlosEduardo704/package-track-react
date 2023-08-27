@@ -1,0 +1,40 @@
+.ulDetalhesRastreamento li{
+  list-style-type: none;
+  margin-left: -55px;
+  padding: 0;
+}
+
+.divLi {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.divDataHora{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.divImagem{
+  padding-right: 20px;
+}
+
+.divStatusLocal strong{
+  color: #6eaf2c;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.divStatusLocal p{
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.trackImg{
+  height: 50px;
+  color: #6eaf2c;
+}
