@@ -1,0 +1,26 @@
+.historyPackageDiv{
+  width: 50%;
+  padding-top: 50px;
+}
+
+.divBeforeNavBar{
+  color: white;
+  align-items: center;
+}
+
+.historyPackageSpanDiv{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.historyPackageUl ul{
+  padding: 0;
+}
+.historyPackageUl li{
+  list-style-type: none;
+  border-bottom: solid 1px black;
+  display: grid;
+  margin: 5px;
+  padding: 15px;
+}
