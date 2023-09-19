@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from './newPackage.module.css'
-const NewPackage = ()=> {
+
+const NewPackage = () => {
   
   const [canIFetch, setCanIFetch] = useState(false);
   const [trackingCode, setTrackingCode] = useState('');
