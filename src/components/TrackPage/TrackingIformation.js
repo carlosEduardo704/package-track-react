@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './trackingInformation.module.css'
 
 function TrakingInformation() {
+
+  // const serializeTrackingData = sessionStorage.getItem('trackingData')
+  const trackingData = JSON.parse(sessionStorage.getItem('trackingData'));
 
   const chooseImage = (text) => {
 
@@ -20,6 +23,36 @@ function TrakingInformation() {
 
   return (
     <div>
+      <h3>Detalhes de Rastreamento:</h3>
+      <ul className={styles.ulDetalhesRastreamento}>
+        {trackingData.map((event) => {return(
+          <li>
+            <div className={styles.divLi}>
+
+              <div className={styles.divDataHora}>
+                <span>
+                  {Object.values(event.data)}
+                </span>
+                <span>
+                  {Object.values(event.hora)}
+                </span>
+              </div>
+
+              <div className={styles.divImagem}>
+                  {chooseImage(event.status.toString())}
+              </div>
+
+              <div className={styles.divStatusLocal}>
+                <strong>{Object.values(event.status)}</strong>
+                <p>{Object.values(event.local)}</p>
+              </div>
+
+            </div>
+            
+          </li>
+        )})
+        }
+      </ul>
     </div>
   );
 }
