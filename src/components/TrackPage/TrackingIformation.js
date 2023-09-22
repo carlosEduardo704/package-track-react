@@ -3,9 +3,8 @@ import styles from './trackingInformation.module.css'
 
 function TrakingInformation() {
 
-  // const serializeTrackingData = sessionStorage.getItem('trackingData')
   const trackingData = JSON.parse(sessionStorage.getItem('trackingData'));
-
+  
   const chooseImage = (text) => {
 
     if(text.includes('entregue')){
