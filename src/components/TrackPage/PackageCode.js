@@ -4,7 +4,7 @@ import styles from './packageCode.module.css'
 const PackageCode = ()=> {
   return (
     <div className={styles.divPackageCode}>
-      <h2>AB123456789BR</h2>
+      <h2>{sessionStorage.getItem('trackingCode')}</h2>
     </div>
   )
 }
