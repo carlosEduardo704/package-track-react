@@ -17,10 +17,6 @@
   max-height: 20px;
 }
 
-.divCodeInputbutton{
-  display: inline-flex;
-}
-
 .trackCodeInput{
   height: 60px;
   width: 400px;
