@@ -5,11 +5,11 @@ const CentralElements = ()=> {
 
   const [canIFetch, setCanIFetch] = useState(false);
   const [trackingCode, setTrackingCode] = useState('');
-
+  
   function buttonClick(){
     setCanIFetch(true);
   }
-
+  
   useEffect(() => {
     if(canIFetch){
       async function fetchData(){
@@ -21,11 +21,15 @@ const CentralElements = ()=> {
           const response = await fetch(apiLink);
           const data = await response.json();
           sessionStorage.clear();
-          sessionStorage.setItem('trackingData', data.eventos);
+          sessionStorage.setItem('trackingCode', trackingCode)
+          sessionStorage.setItem('trackingData', JSON.stringify(data.eventos));
           setCanIFetch(false);
+          window.location.href = '/track';
         }catch(error){
+          sessionStorage.clear();
           alert('Código inválido, tente novamente!');
           setCanIFetch(false);
+          window.location.reload()
         }
       }
       fetchData();
