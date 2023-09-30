@@ -21,8 +21,10 @@ const NewPackage = () => {
           const response = await fetch(apiLink);
           const data = await response.json();
           sessionStorage.clear();
-          sessionStorage.setItem('trackingData', data.eventos);
+          sessionStorage.setItem('trackingCode', trackingCode)
+          sessionStorage.setItem('trackingData', JSON.stringify(data.eventos));
           setCanIFetch(false);
+          window.location.reload();
         }catch(error){
           alert('Código inválido, tente novamente!');
           setCanIFetch(false);
