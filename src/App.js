@@ -8,6 +8,7 @@ import Register from './pages/Register'
 import Track from './pages/Track';
 import SearchCep from './pages/SearchCep';
 import About from './pages/About';
+import Error from './pages/Error';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path='/track' element={<Track/>}/>
         <Route path='cepSearch' element={<SearchCep/>}/>
         <Route path='about' element={<About/>}/>
+        <Route path='404error' element={<Error/>}/>
       </Routes>
     </Router>
   )
