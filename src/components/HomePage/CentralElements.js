@@ -24,7 +24,7 @@ const CentralElements = ()=> {
           sessionStorage.setItem('trackingCode', trackingCode)
           sessionStorage.setItem('trackingData', JSON.stringify(data.eventos));
           setCanIFetch(false);
-          window.location.href = '/track';
+          window.location.href = `/track/${trackingCode}`;
         }catch(error){
           sessionStorage.clear();
           alert('Código inválido, tente novamente!');
