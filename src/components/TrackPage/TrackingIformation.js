@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './trackingInformation.module.css'
 
 function TrakingInformation() {
 
-  const trackingData = JSON.parse(sessionStorage.getItem('trackingData'));
+  const urlTrackCode = window.location.href.substring(28);
+  const [trackingData, setTrackingdata] = useState(false);
+
+
+  function trackUrlCode(){
+
+    async function fetchData(){
+      try{
+        const user = 'carlos_eduardo2761@hotmail.com';
+        const token = '83429b38f609e7ee3bc0fb8b51e8ce84be546289fdb2a40207b0f4bc0c0452ad';
+        const apiLink = `https://api.linketrack.com/track/json?user=${user}&token=${token}&codigo=${urlTrackCode}`;
+        // API
+        fetch(apiLink)
+          .then(resp => resp.json())
+          .then(data => setTrackingdata(JSON.stringify(data)))
+
+      }catch(error){
+        console.log(error);
+      }
+    }
+    fetchData();
+  }
+
+
+
+  useEffect(() => {
+
+    trackUrlCode();
+
+  })
+
   
   const chooseImage = (text) => {
 
@@ -24,7 +54,7 @@ function TrakingInformation() {
     <div>
       <h3>Detalhes de Rastreamento:</h3>
       <ul className={styles.ulDetalhesRastreamento}>
-        {trackingData.map((event) => {return(
+        {trackingData && trackingData.map((event) => {return(
           <li>
             <div className={styles.divLi}>
 
