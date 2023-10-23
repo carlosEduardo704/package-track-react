@@ -3,36 +3,33 @@ import styles from './trackingInformation.module.css'
 
 function TrakingInformation() {
 
-  const urlTrackCode = window.location.href.substring(28);
   const [trackingData, setTrackingdata] = useState(false);
-
-
-  function trackUrlCode(){
-
-    async function fetchData(){
-      try{
-        const user = 'carlos_eduardo2761@hotmail.com';
-        const token = '83429b38f609e7ee3bc0fb8b51e8ce84be546289fdb2a40207b0f4bc0c0452ad';
-        const apiLink = `https://api.linketrack.com/track/json?user=${user}&token=${token}&codigo=${urlTrackCode}`;
-        // API
-        fetch(apiLink)
-          .then(resp => resp.json())
-          .then(data => setTrackingdata(JSON.stringify(data)))
-
-      }catch(error){
-        console.log(error);
-      }
-    }
-    fetchData();
-  }
-
-
-
+    
   useEffect(() => {
+    
+    function trackUrlCode(){
 
+      const urlTrackCode = window.location.href.substring(28);
+      
+      async function fetchData(){
+        try{
+          const user = 'carlos_eduardo2761@hotmail.com';
+          const token = '83429b38f609e7ee3bc0fb8b51e8ce84be546289fdb2a40207b0f4bc0c0452ad';
+          const apiLink = `https://api.linketrack.com/track/json?user=${user}&token=${token}&codigo=${urlTrackCode}`;
+          // API
+          const response = await fetch(apiLink);
+          const data = await response.json();
+          sessionStorage.setItem('codigo', data.codigo);
+          setTrackingdata(data);
+        }catch(error){
+          alert('erro!');
+        }
+      }
+      fetchData();
+    }
     trackUrlCode();
 
-  })
+  }, []);
 
   
   const chooseImage = (text) => {
@@ -54,8 +51,8 @@ function TrakingInformation() {
     <div>
       <h3>Detalhes de Rastreamento:</h3>
       <ul className={styles.ulDetalhesRastreamento}>
-        {trackingData && trackingData.map((event) => {return(
-          <li>
+        {trackingData && trackingData.eventos.map((event, index) => {return(
+          <li key={index}>
             <div className={styles.divLi}>
 
               <div className={styles.divDataHora}>
