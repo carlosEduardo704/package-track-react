@@ -19,14 +19,9 @@ const CentralElements = ()=> {
           const apiLink = `https://api.linketrack.com/track/json?user=${user}&token=${token}&codigo=${trackingCode}`;
           // API
           const response = await fetch(apiLink);
-          const data = await response.json();
-          sessionStorage.clear();
-          sessionStorage.setItem('trackingCode', trackingCode)
-          sessionStorage.setItem('trackingData', JSON.stringify(data.eventos));
           setCanIFetch(false);
-          window.location.href = '/track';
+          window.location.href = `/track/${trackingCode}`;
         }catch(error){
-          sessionStorage.clear();
           alert('Código inválido, tente novamente!');
           setCanIFetch(false);
           window.location.reload()

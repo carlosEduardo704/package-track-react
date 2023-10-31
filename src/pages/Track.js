@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 import './TrackStyle.css'
@@ -8,6 +8,7 @@ import HistoryPackage from '../components/TrackPage/HistoryPackage'
 import TrakingInformation from '../components/TrackPage/TrackingIformation'
 
 const Track = () => {
+
   return(
     <div >
       <div className="trackExternalDivNavBar">
