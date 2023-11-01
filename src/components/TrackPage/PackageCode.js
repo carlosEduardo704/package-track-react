@@ -3,7 +3,7 @@ import styles from './packageCode.module.css'
 
 const PackageCode = ()=> {
 
-  const urlTrackCode = window.location.href.substring(28);
+  const urlTrackCode = window.location.href.substring(window.location.href.length - 13);
 
 
   return (
