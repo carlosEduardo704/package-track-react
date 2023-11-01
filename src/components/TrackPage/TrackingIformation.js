@@ -9,7 +9,7 @@ function TrakingInformation() {
     
     function trackUrlCode(){
 
-      const urlTrackCode = window.location.href.substring(28);
+      const urlTrackCode = window.location.href.substring(window.location.href.length - 13);
       
       async function fetchData(){
         try{
