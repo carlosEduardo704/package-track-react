@@ -22,7 +22,7 @@ function TrakingInformation() {
           sessionStorage.setItem('codigo', data.codigo);
           setTrackingdata(data);
         }catch(error){
-          alert('erro!');
+          window.location = '/404error';
         }
       }
       fetchData();
