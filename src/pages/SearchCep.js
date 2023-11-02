@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import NavBar from '../components/NavBar';
+import CentralElementsSearchCep from '../components/SearchCepPage/centralElements';
+import Footer from '../components/Footer';
+import SectionElements from '../components/SearchCepPage/sectionElements';
 
 const SearchCep = () => {
   return(
     <div>
-      <h1>Busca Cep Page</h1>
+      <NavBar/>
+      <CentralElementsSearchCep/>
+      <SectionElements/>
+      <Footer/>
     </div>
   )
 }
