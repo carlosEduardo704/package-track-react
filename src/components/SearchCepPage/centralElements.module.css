@@ -1,0 +1,39 @@
+.externalDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.internalDiv{
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+
+.h1BuscaCep{
+  color: #FFFAFA;
+}
+
+.texto{
+  color: #FFFAFA;
+  font-size: 30px;
+  text-align: center;
+  max-height: 20px;
+}
+
+.searchInput{
+  height: 60px;
+  width: 400px;
+  font-size: 20px;
+}
+
+.searchButton{
+  background-color: #6eaf2c;
+  color: #FFFAFA;
+  height: 62px;
+  font-size: 20px;
+  border: solid 1px;
+  border: transparent;
+  cursor: pointer;
+}

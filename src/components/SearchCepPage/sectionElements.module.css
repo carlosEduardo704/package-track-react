@@ -1,0 +1,32 @@
+.mainDiv{
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.sectionSectionElements{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.h2sections{
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: center;
+  color: #000;
+}
+
+.ulSectionElements{
+  list-style-type: none;
+  padding: 0;
+}
+
+.liSectionElements{
+  background-color: #fdfdfd;
+  -webkit-box-shadow: 0 2px 4px rgba(216,216,216,.68);
+  box-shadow: 0 2px 4px rgba(216,216,216,.68);
+  padding: 0.5em 1em 1.5em;
+  font-size: 1.2em;
+  color: #333;
+}
