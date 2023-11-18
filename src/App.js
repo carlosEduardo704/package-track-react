@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import DataProvider from './components/SearchCepPage/DataProvider'
 
 // pages
 import Home from './pages/Home';
@@ -19,7 +20,7 @@ const App = () => {
         <Route path='login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/track/:trackCode' element={<Track/>}/>
-        <Route path='cepSearch' element={<SearchCep/>}/>
+        <Route path='cepSearch' element={<DataProvider><SearchCep/></DataProvider>}/>
         <Route path='about' element={<About/>}/>
         <Route path='404error' element={<Error/>}/>
       </Routes>
