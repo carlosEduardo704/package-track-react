@@ -1,0 +1,20 @@
+.mainDivCep {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.mainDivCep ul{
+list-style-type: none;
+}
+
+.ulDiv{
+  margin-right: 20px;
+}
+
+.cepImage{
+  width: 40%;
+  margin-left: 20px;
+}
