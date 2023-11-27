@@ -8,7 +8,6 @@ import Login from './pages/Login';
 import Register from './pages/Register'
 import Track from './pages/Track';
 import SearchCep from './pages/SearchCep';
-import About from './pages/About';
 import Error from './pages/Error';
 
 
@@ -21,7 +20,6 @@ const App = () => {
         <Route path='/register' element={<Register/>}/>
         <Route path='/track/:trackCode' element={<Track/>}/>
         <Route path='cepSearch' element={<DataProvider><SearchCep/></DataProvider>}/>
-        <Route path='about' element={<About/>}/>
         <Route path='404error' element={<Error/>}/>
       </Routes>
     </Router>
