@@ -10,6 +10,10 @@
   align-content: center;
 }
 
+.divCodeInputButton{
+  display: inline-flex;
+}
+
 .texto{
   color: #FFFAFA;
   font-size: 30px;
@@ -25,9 +29,23 @@
 
 .trackCodeButton{
   background-color: #6eaf2c;
-  height: 62px;
+  height: 65px;
   font-size: 20px;
   border: solid 1px;
   border: transparent;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .texto{
+    font-size: 18px;
+  }
+
+  .trackCodeInput{
+    font-size: 12px;
+    width: 240px;
+  }
+  .trackCodeButton{
+    font-size: 12px;
+  }
 }

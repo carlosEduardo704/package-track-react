@@ -5,11 +5,8 @@ import styles from './navBar.module.css'
 const NavBar = () => {
   return(
     <div className={styles.navBar}>
-      <Link className={styles.packageTrack} to='/'>PackageTrack</Link>
-      <div className={styles.div}>
-        <Link to='/cepSearch'>Busca Cep</Link>
-        <Link to='/about'>Sobre</Link>
-      </div>
+      <Link className={styles.title} to='/'>PackageTrack</Link>
+      <Link className={styles.textBucaCep} to='/cepSearch'>Busca Cep</Link>
     </div>
   )
 }
