@@ -1,8 +1,13 @@
+.PrincipalDiv{
+  background-color: #ffffff;
+}
+
 .divNavBar{
   align-items: center;
   
 }
 .trackExternalDivNavBar{
+  background-color: #006400;
   padding-left: 20%;
   margin-bottom: 5px;
 }
@@ -13,5 +18,6 @@
 
 
 .trackExternalDivFooter{
+  background-color: #006400;
   padding-left: 20%;
 }

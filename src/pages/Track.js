@@ -10,7 +10,7 @@ import TrakingInformation from '../components/TrackPage/TrackingIformation'
 const Track = () => {
 
   return(
-    <div >
+    <div className='PrincipalDiv'>
       <div className="trackExternalDivNavBar">
         <NavBar/>
       </div>
