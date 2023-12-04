@@ -9,12 +9,12 @@ import Section from '../components/HomePage/Section'
 
 const Home = () => {
   return(
-    <>
-    <NavBar/>
-    <CentralElements/>
-    <Section/>
-    <Footer/>
-    </>
+    <div className='PrincipalDivTrack'>
+      <NavBar/>
+      <CentralElements/>
+      <Section/>
+      <Footer/>
+    </div>
   )
 }
 
