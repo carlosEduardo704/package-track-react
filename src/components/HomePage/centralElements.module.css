@@ -11,19 +11,20 @@
 }
 
 .divCodeInputButton{
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .texto{
   color: #FFFAFA;
-  font-size: 30px;
+  font-size: 3vh;
   text-align: center;
-  max-height: 20px;
 }
 
 .trackCodeInput{
   height: 60px;
-  width: 400px;
+  width: 40vh;
   font-size: 20px;
 }
 
@@ -36,16 +37,16 @@
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 420px) {
   .texto{
-    font-size: 18px;
+    font-size: 2vh;
   }
 
   .trackCodeInput{
-    font-size: 12px;
-    width: 240px;
+    font-size: 1.7vh;
+    width: 22vh;
   }
   .trackCodeButton{
-    font-size: 12px;
+    font-size: 17px;
   }
 }
