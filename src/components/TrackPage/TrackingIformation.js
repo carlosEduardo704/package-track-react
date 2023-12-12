@@ -36,6 +36,8 @@ function TrakingInformation() {
 
     if(text.includes('entregue')){
       return <img className={styles.trackImg} src="https://img.icons8.com/?size=512&id=7773&format=png" alt="Entregue" />
+    }else if(text.includes('A entrega não pode ser efetuada')){
+      return <img className={styles.trackImg} src="https://img.icons8.com/?size=256&id=WK5fAJ6maNES&format=png" alt="Não efetuada" />
     }else if(text.includes('saiu para') || text.includes('não atendido')){
       return <img className={styles.trackImg} src="https://img.icons8.com/?size=512&id=8372&format=png" alt="Saiu para entrega" />
     }else if(text.includes('não localizado')){

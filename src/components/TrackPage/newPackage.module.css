@@ -1,5 +1,6 @@
 .divNewPackage{
   display: flex;
+  flex-wrap: wrap;
   padding-top: 0;
   margin-top: -10px;
 }
@@ -15,3 +16,10 @@
   cursor: pointer;
 }
 
+@media (max-width: 400px) {
+
+  .divNewPackage input{
+
+  }
+  
+}

@@ -6,6 +6,7 @@
 
 .divLi {
   display: flex;
+  justify-content:flex-start;
   padding-bottom: 30px;
 }
 
@@ -22,12 +23,12 @@
 
 .divStatusLocal strong{
   color: #6eaf2c;
-  font-size: 30px;
+  font-size: 3vh;
   font-weight: bold;
 }
 
 .divStatusLocal p{
-  font-size: 20px;
+  font-size: 2vh;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -35,6 +36,17 @@
 }
 
 .trackImg{
-  height: 50px;
-  color: #6eaf2c;
+  height: 5vh;
+}
+
+@media (max-width: 350px) {
+
+  .divDataHora{
+    margin-right: 5px;
+  }
+  
+  .divImagem{
+    padding-right: 5px;
+  }
+  
 }
