@@ -10,20 +10,18 @@ import TrakingInformation from '../components/TrackPage/TrackingIformation'
 const Track = () => {
 
   return(
-    <div className='PrincipalDiv'>
-      <div className="trackExternalDivNavBar">
-        <NavBar/>
+    <>
+      <NavBar/>
+      <div className='mainDiv'>
+        <div>
+          <NewPackage/>
+          <PackageCode/>
+          <HistoryPackage/>
+          <TrakingInformation/>
+        </div>
       </div>
-      <div className="trackInternalDiv">
-        <NewPackage/>
-        <PackageCode/>
-        <HistoryPackage/>
-        <TrakingInformation/>
-      </div>
-      <div className="trackExternalDivFooter">
-        <Footer/>
-      </div>
-    </div>
+      <Footer/>
+    </>
   )
 }
 
