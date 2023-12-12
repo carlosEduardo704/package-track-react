@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 350px;
+  background-color: #006400;
 }
 
 .internalDiv{
@@ -23,17 +24,24 @@
 }
 
 .searchInput{
-  height: 60px;
-  width: 400px;
+  height: 6vh;
+  width: 18vw;
   font-size: 20px;
 }
 
 .searchButton{
   background-color: #6eaf2c;
   color: #FFFAFA;
-  height: 62px;
+  height: 6.4vh;
   font-size: 20px;
   border: solid 1px;
   border: transparent;
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .searchInput{
+    width: 40vw;
+    font-size: 20px;
+  }
 }
