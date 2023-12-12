@@ -15,4 +15,19 @@
 .divFooter {
   padding: 10px;
   display: block;
+  background-color: #006400;
+}
+
+@media (max-width: 319px) {
+
+  .divFooter img{
+    width: 3vh;
+    padding-right: 10px;
+  }
+
+  .footerImgs{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+  }
 }

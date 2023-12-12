@@ -6,7 +6,7 @@ const NavBar = () => {
   return(
     <div className={styles.navBar}>
       <Link className={styles.title} to='/'>PackageTrack</Link>
-      <Link className={styles.textBucaCep} to='/cepSearch'>Busca Cep</Link>
+      <Link className={styles.textBucaCep} to='/cepSearch'>BuscaCep</Link>
     </div>
   )
 }

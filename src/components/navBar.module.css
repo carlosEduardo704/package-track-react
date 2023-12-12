@@ -1,5 +1,8 @@
 .navBar{
   display: flex;
+  background-color: #006400;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .navBar a{
@@ -8,18 +11,12 @@
   font-family: Dyuthi;
 }
 .title{
-  background: transparent;
-  border: transparent;
-  font-size: 45px;
-  margin-right: 30px;
+  font-size: 5vh;
+  margin-right: 40px;
 }
 
 .textBucaCep{
-  background: transparent;
-  border: transparent;
-  font-size: 35px;
-  margin-right: 30px;
-  margin-top: 5px;
+  font-size: 3vh;
 }
 
 .div{
@@ -35,12 +32,12 @@
   margin-right: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 319px) {
   .title{
-    font-size: 4vh;
+    font-size: 3vh;
   }
   
   .textBucaCep{
-    font-size: 3vh;
+    font-size: 2vh;
   }
 }
