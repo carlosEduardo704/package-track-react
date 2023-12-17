@@ -8,7 +8,7 @@
 .navBar a{
   color: #FFFAFA;
   text-decoration: none;
-  font-family: Dyuthi;
+  font-weight: bold;
 }
 .title{
   font-size: 5vh;
@@ -17,6 +17,7 @@
 
 .textBucaCep{
   font-size: 3vh;
+  margin-top: 1vh;
 }
 
 .div{
@@ -32,12 +33,8 @@
   margin-right: 10px;
 }
 
-@media (max-width: 319px) {
-  .title{
-    font-size: 3vh;
-  }
-  
+@media (max-width: 400px) {
   .textBucaCep{
-    font-size: 2vh;
+    margin-top: 2vh;
   }
 }
